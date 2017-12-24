@@ -1,2 +1,4 @@
 # eBuilders
-Login / Registration / Fogout forms + CSS3 Slider
+Login / Registration / Logout forms + CSS3 Slider <br>
+pure JS
+

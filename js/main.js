@@ -24,7 +24,6 @@ function userStatusCheck() {
     if (storedName && storedPassword) {
         hideForms();
         statusBlock.innerHTML = "Welcome, " + storedName + "!<br/><em class='link' onclick='userLogout()'>Logout</em>";
-
         credentialsBlock.style.display = "block";
         document.body.className = 'registered';
     }
@@ -77,10 +76,6 @@ function userLogout() {
 
 // Check if stored data from form-register is equal to entered data in the form-login
 function submitLoginForm() {
-
-    console.log(userName.value);
-    console.log(userPassword.value);
-
     storedName = localStorage.getItem('name');
     storedPassword = localStorage.getItem('password');
 
@@ -88,7 +83,7 @@ function submitLoginForm() {
     document.getElementById('userName').classList.remove('invalid');
     document.getElementById('userName').classList.remove('invalid');
 
-    // check if stored data from form-register is equal to data from login form
+    // Check if stored data from form-register is equal to data from login form
     if (userName.value == storedName && userPassword.value == storedPassword) {
         statusBlock.style.display = "block";
         statusBlock.innerHTML = "<p class='message-success'>Welcome, " + storedName + "!<br/><em class='link' onclick='userLogout()'>Logout</em></p>";
@@ -100,22 +95,17 @@ function submitLoginForm() {
         document.getElementById("userName").className = 'invalid';
         statusBlock.style.display = "block";
         statusBlock.innerHTML = "<span class='message-error'>wrong username</span>";
-        /*setTimeout(function () {
-            statusBlock.style.display = "none"
-        }, 3000);*/
         localStorage.removeItem('user_status');
     }
     else if (userPassword.value != storedPassword) {
         document.getElementById("userPassword").className = 'invalid';
         statusBlock.style.display = "block";
         statusBlock.innerHTML = "<span class='message-error'>wrong password</span>";
-        /*setTimeout(function () {
-            statusBlock.style.display = "none"
-        }, 3000);*/
         localStorage.removeItem('user_status');
     }
 }
 
+// Display user details when logged in.
 function showCredentials() {
     credentialsBlock.style.display = 'block';
     credentialsBlock.innerHTML = "You are already registered!<br>User Name: " + storedName + "<br> Password: " + storedPassword;
@@ -123,6 +113,7 @@ function showCredentials() {
     credentialsBlock.innerHTML += "<em class='link' onclick='showLoginForm()'>back to login</em>";
 }
 
+// Clear username / password session values.
 function clearLocalStorage() {
     localStorage.removeItem('name');
     localStorage.removeItem('password');
