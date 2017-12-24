@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eBuilbers task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-logo">
+        <img src="images/logo.png" alt="Polar Bear"/>
+    </div>
+    <div class="current-user">
+        <em class="link link-login" onclick="showLoginForm()">Login</em>
+        <em class="link link-logout" onclick="userLogout()">Logout</em>
+        <em class="link link-register" onclick="showRegistrationForm()">Register</em>
+        <em class="link link-clear" onclick="clearLocalStorage()">Clear data</em>
+    </div>
+</header>
+<main class="main-content">
+    <section class="section-slider">
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/im01.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-6" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></label>
+                    <label for="img-2" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-2"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/im02.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-1" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></label>
+                    <label for="img-3" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-3"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/im03.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-2" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></label>
+                    <label for="img-4" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-4"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/im04.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-3" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></label>
+                    <label for="img-5" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-5"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/im05.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-4" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></label>
+                    <label for="img-6" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></label>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-6"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/im06.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-5" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></label>
+                    <label for="img-1" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></label>
+                </div>
+            </li>
+
+            <li class="nav-dots">
+                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+            </li>
+        </ul>
+    </section>
+    <section class="section-forms">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+            ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+            nulla pariatur?</p>
+        <form id="form-register">
+            <h3>Register</h3>
+            <input id="name" type="text" placeholder="Name"/>
+            <input id="password" type="password" placeholder="Password"/>
+            <input id="btn-register" type="button" value="Register" onClick="submitRegistrationForm()"/>
+            <p>Back to <em class="link" onclick="showLoginForm()">Login</em></p>
+        </form>
+
+        <form id="form-login">
+            <h3>Login</h3>
+            <input id="userName" type="text" class="input-field" placeholder="Enter Username"/>
+            <input id="userPassword" type="password" class="input-field" placeholder="Enter Password"/>
+            <input id="btn-login" type="button" value="Login" onClick="submitLoginForm()"/>
+            <p><em class="link" onclick="showRegistrationForm()">Register</em> if do not have an account</p>
+        </form>
+
+        <div id="form-status"></div>
+
+        <div id="user-credentials"></div>
+    </section>
+</main>
+<footer class="site-footer">
+
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

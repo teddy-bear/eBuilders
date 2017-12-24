@@ -1,0 +1,13 @@
+$montserrat: 'Montserrat', sans-serif;
+$font_awesome: 'FontAwesome';
+
+// Colors.
+$color_primary: #212529;
+
+// Font settings.
+@mixin font($font_size:16px, $line_height:1.5, $color:$color_primary, $font_weight: 300) {
+  font-size: $font_size;
+  line-height: $line_height;
+  color: $color;
+  font-weight: $font_weight;
+}
